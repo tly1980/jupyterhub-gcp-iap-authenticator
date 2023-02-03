@@ -9,8 +9,8 @@ The [JWT token](https://jwt.io/) verfication part was taken from the
 [GoogleCloudPlatform/jupyterhub-gcp-proxies-authenticator](https://github.com/GoogleCloudPlatform/jupyterhub-gcp-proxies-authenticator).
 project.
 
-However, I eliminate the part retriving `backend_service_id` dynamically.
-As it will be a static value once you've had IAP proxy enabled.
+However, I eliminate the part dynamically retriving `backend_service_id`.
+The value of `backend_service_id` should be static once you've got your [IAP](https://cloud.google.com/iap) setup.
 This will simply your GKE permissions setup by removing needs to access get [IAP](https://cloud.google.com/iap) config through API.
 
 ### Example Config
