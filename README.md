@@ -39,6 +39,7 @@ hub:
 1. Go to your Identity-Aware Proxy page in your GCP console.
 2. Click the button located on your backend service.
 3. Pick JWT audience code.
+4. And it should prompt a dialog and display 'audience' claim.
 
 ![Getting JWT audience code](res/get-jwt-aud-code.jpg)
 
